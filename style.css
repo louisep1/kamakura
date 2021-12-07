@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+  color: #000;
+  line-height: 1.4;
+
+}
+
+a {
+    text-decoration: none;
+    color: #000; /* for some reason, body {color: ...} doesn't cover this section */
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+
+
+/* Nav */
+.nav {
+    width: 100%;
+    height: 10rem;
+    padding: 40px 0;
+    font-size: 1.4rem;
+    align-items: center; /* centers left with right */
+    /* position: relative; */
+
+}
+
+.nav-left {
+    position: absolute;
+    font-size: 2rem;
+}
+
+.nav-left:hover {
+    opacity: 70%;
+}
+
+.nav img {
+    position: absolute;
+    width: 100px;
+    left: 100px;
+    top: 20px;
+}
+
+.nav-right {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center; /* centers sign in button with links */
+    border-bottom: 3px #ccc solid;
+    padding-bottom: 25px;
+}
+
+.nav-right li {
+    padding: 0 30px 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nav-right li:hover {
+    border-bottom: 3px red solid;
+}
+
+.nav-right li:last-child:hover {
+    border-bottom: none;
+}
+
+.btn {
+    /* display: inline-block; */
+    cursor: pointer;
+    font-size: 1.2rem;
+    background: #fff;
+    padding: 8px 16px;
+    border: 1.5px #000 solid;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background: rgb(247, 247, 247)
+}
+
+
+/* Banner */
+.banner {
+    background: url(img/temple-small.jpg) no-repeat center center/cover;
+    height: 30rem;
+    position: relative; /* so that h1 can be positioned relative to the top/left of the banner section */
+}
+
+.banner h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: #000;
+    position: absolute;
+    top: 100px;
+    left: 60px;
+    background: #fff;
+    padding: 0 10px;
+    opacity: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #slider, .slide-content {
+    height: 30rem;
+}
+
+.slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide1{background-image: url(img/temple-small.jpg);}
+.slide2{background-image: url(img/bamboo.jpg);}
+.slide3{background-image: url(img/mountainbeach-small.jpeg);}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+#arrow-left {
+    border-width: 15px 20px 15px 0;
+    border-color: transparent #fff transparent transparent;
+    left: 0;
+    margin-left: 30px;
+    opacity: 50%;
+}
+
+#arrow-right {
+    border-width: 15px 0 15px 20px;
+    border-color: transparent transparent transparent #fff;
+    right: 0;
+    margin-right: 30px;
+    opacity: 50%;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box {
+    padding: 15px;
+    margin: 20px 0;
+    position: relative;
+}
+
+.text-absolute {
+    position: absolute;
+    background: #fff;
+    opacity: 80%;
+    padding: 5px 10px;
+}
+
+.map {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    background: #c0f5c39c;
+}
+
+.map img {
+    padding: 5px 30px;
+    right: 0;
+}
+
+.map {
+    text-align: center;
+    line-height: 1.5;
+    
+}
+
+.map h2 {
+    padding-top: 10px;
+}
+
+.beach img {
+    width: 100%;
+    height: 30rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.beach .text-absolute {
+    top: 30px;
+    left: 30px;
+}
+
+
+
+
+
+
+.culture {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow-y: hidden;
+    height: 25rem;
+}
+
+.culture img {
+    width: 100%;
+}
+
+.culture .text-absolute {
+    top: 30px;
+    left: 50%;
+    margin-left: 10px;
+    /* background: #fff;
+    opacity: 80%;
+    padding: 5px 10px; */
+}
