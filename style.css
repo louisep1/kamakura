@@ -406,6 +406,10 @@ p {
         left: 10px;
     }
 
+    .container-main {
+        width: 100%;
+    }
+
     .box {
         margin: 10px 0;
     }
