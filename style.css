@@ -27,6 +27,17 @@ ul {
     position: relative;
 }
 
+h2 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.container-main a {
+    font-size: 16px;
+} 
 
 
 /* Nav */
@@ -34,7 +45,6 @@ ul {
     width: 100%;
     height: 10rem;
     padding: 40px 0;
-    font-size: 1.4rem;
     align-items: center; /* centers left with right */
     /* position: relative; */
 
@@ -63,6 +73,7 @@ ul {
     align-items: center; /* centers sign in button with links */
     border-bottom: 3px #ccc solid;
     padding-bottom: 25px;
+    font-size: 1.4rem;
 }
 
 .nav-right li {
@@ -160,14 +171,10 @@ ul {
     top: 30px;
 }
 
-.map h2 {
-    padding-top: 10px;
-}
-
 
 .map .text {
     position: absolute;
-    top: 40px;
+    top: 50px;
     left: 70px;
 }
 
@@ -182,7 +189,7 @@ ul {
 /* Beach */
 .beach img {
     width: 100%;
-    height: 30rem;
+    max-height: 30rem;
     align-items: center;
     justify-content: center;
 }
@@ -201,7 +208,7 @@ ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     overflow-y: hidden;
-    height: 19rem;
+    /* height: 19rem;*/  /* this is a problem when we resize, because the image gets smaller so the margin/padding/space between box element underneath gets bigger*/
 }
 
 .culture img {
@@ -242,7 +249,7 @@ ul {
 }
 
 .hiking img {
-    height: 20rem;
+    max-height: 20rem;
     display: block;
     margin: 0 auto;
 }
@@ -261,3 +268,175 @@ ul {
     color: #999;
     font-size: 1rem;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media queries */
+@media(max-width:1150px) {
+  .nav {
+    height: 5rem;
+    padding: 20px 0;
+  }
+     
+  .nav img {
+    width: 60px;
+    left: 60px;
+    top: 20px;
+  }
+    
+    .nav-right li {
+        padding: 0 10px 5px;
+    }
+
+    .nav-right a {
+        font-size: 18px;
+    }
+
+
+    .banner h1 {
+      font-size: 4rem;
+    }
+    
+     
+    .map .text {
+        display: none;
+    }
+
+    .map img {
+        margin: 0 auto;
+    }
+
+    .culture {
+        display: grid;
+        grid-template-columns: 1fr;  
+        grid-gap: 10px;
+    }
+
+    .culture .text-absolute {
+          top: 230px; /* ???? */
+          right: 15px;
+    }
+
+    /* couldn't do it but maybe for future: resize text in .map - or maybe stick it into two columns */
+  }
+
+
+
+  @media(max-width: 900px) {    
+      .banner h1 {
+          font-size: 3.5rem;
+      }
+
+      .btn {
+        font-size: 1rem;
+        padding: 8px 12px;
+      }
+
+      /* make text-absolute box smaller ????? */
+      
+      
+      h2 {
+        font-size: 18px;
+    }
+    
+    p, .container-main a, .nav-right a {
+        font-size: 14px;
+    }
+
+    .map {
+        display: none;
+    }
+  }
+
+
+
+@media(max-width: 700px) {
+  .banner h1 {
+    font-size: 3rem;
+  }
+
+  .nav-right {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+/* Mobile query */
+
+
+@media(max-width: 500px){    
+    .nav {
+        height: 3rem;
+        padding: 20px 0; 
+    }
+    
+    .nav-left {
+        font-size: 1rem;
+    }
+    
+    .nav img {
+        height: 20px;
+        width: auto;
+        left: 35px;
+    }
+
+    .banner {
+        width: 100%;
+        height: 10rem;
+    }
+
+    .banner h1 {
+        font-size: 2rem;
+        top: 30px;
+        left: 10px;
+    }
+
+    .box {
+        margin: 10px 0;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    p, .container-main a {
+        font-size: 12px;
+    }
+
+    .map {
+        display: none;
+    }
+
+    img {
+        height: auto;
+    }
+
+    .culture .text-absolute {
+        bottom: 0;
+        right: 0;
+    }
+
+    .hiking .text-absolute {
+        top: 0;
+        left: 0;
+        padding: 10px;
+        max-height: 80px;
+    }
+
+
+}
