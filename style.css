@@ -435,6 +435,10 @@ p {
         right: 0;
     }
 
+    .hiking {
+        margin: 0;
+    }
+
     .hiking .text-absolute {
         top: 0;
         left: 0;
@@ -442,5 +446,7 @@ p {
         max-height: 80px;
     }
 
-
+    .hiking img {
+        max-height: 10rem;
+    }
 }
