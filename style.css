@@ -383,6 +383,7 @@ p {
     .nav {
         height: 3rem;
         padding: 20px 0; 
+        margin-bottom: 5px;
     }
     
     .nav-left {
@@ -397,7 +398,7 @@ p {
 
     .banner {
         width: 100%;
-        height: 10rem;
+        height: 12rem;
     }
 
     .banner h1 {
@@ -414,12 +415,22 @@ p {
         margin: 10px 0;
     }
 
+    .text-absolute {
+        max-width: 200px;
+        padding: 2px 4px;
+        line-height: 1.2;
+    }
+
     h2 {
         font-size: 14px;
     }
 
-    p, .container-main a {
+    p {
         font-size: 12px;
+    }
+
+    .container-main a {
+        font-size: 10px;
     }
 
     .map {
@@ -430,9 +441,18 @@ p {
         height: auto;
     }
 
+    .beach .text-absolute {
+        top: 50%;
+        left: 10px;
+    }
+
     .culture .text-absolute {
-        bottom: 0;
+        top: 52%;
         right: 0;
+    }
+
+    .seasonal .text-absolute {
+        left: 10px;
     }
 
     .hiking {
@@ -440,9 +460,8 @@ p {
     }
 
     .hiking .text-absolute {
-        top: 0;
-        left: 0;
-        padding: 10px;
+        bottom: 10px;
+        left: 20px;
         max-height: 80px;
     }
 
