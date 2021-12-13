@@ -10,8 +10,9 @@ const interests = document.querySelectorAll('.interests-dropdown-content li');
 const hotBtn = document.querySelector('.hot-dropdown');
 const hot = document.querySelectorAll('.hot-dropdown-content li');
 
+
+// Opens the ".hidden" mobile menu bar and prevents scrolling when it's hidden, then resets the opened items
 function openMenu(e) {
-    // mobileNav.style.display = 'block';
     mobileNav.classList.toggle('hidden');
     document.body.classList.toggle('no-scroll'); /* we created a no-scroll class in css to hide the hidden content in .hidden */
 
@@ -26,10 +27,19 @@ function openMenu(e) {
     }
 }
 
+
+
+// Opens the items and closes others
 function openDestinations(e) {
     for(let i = 0; i< destinations.length; i++) {
-        destinations[i].style.display = 'block';
+        if (destinations[i].style.display == 'none') {
+            destinations[i].style.display = 'block';
+        } else {
+            destinations[i].style.display = 'none'
+        };
     }
+
+
     for(let i = 0; i< interests.length; i++) {
         interests[i].style.display = 'none';
     }
@@ -40,8 +50,14 @@ function openDestinations(e) {
 
 function openInterests(e) {
     for(let i = 0; i< interests.length; i++) {
-        interests[i].style.display = 'block';
+        if (interests[i].style.display == 'none') {
+            interests[i].style.display = 'block';
+        } else {
+            interests[i].style.display = 'none'
+        };
     }
+    
+
     for(let i = 0; i< destinations.length; i++) {
         destinations[i].style.display = 'none';
     }
@@ -52,8 +68,14 @@ function openInterests(e) {
 
 function openHot(e) {
     for(let i = 0; i< hot.length; i++) {
-        hot[i].style.display = 'block';
+        if (hot[i].style.display == 'none') {
+            hot[i].style.display = 'block';
+        } else {
+            hot[i].style.display = 'none'
+        };
     }
+
+
     for(let i = 0; i< destinations.length; i++) {
         destinations[i].style.display = 'none';
     }
