@@ -31,12 +31,17 @@ function openMenu(e) {
 
 // Opens the items and closes others
 function openDestinations(e) {
+    // for(let i = 0; i< destinations.length; i++) {
+    //     if (destinations[i].style.display == 'none') {
+    //         destinations[i].style.display = 'block';
+    //     } else {
+    //         destinations[i].style.display = 'none'
+    //     };
+    // }
+    // This worked, except for if you tried to click one of the sublinks, it also closes the section
+
     for(let i = 0; i< destinations.length; i++) {
-        if (destinations[i].style.display == 'none') {
-            destinations[i].style.display = 'block';
-        } else {
-            destinations[i].style.display = 'none'
-        };
+        destinations[i].style.display = 'block';
     }
 
 
@@ -50,11 +55,7 @@ function openDestinations(e) {
 
 function openInterests(e) {
     for(let i = 0; i< interests.length; i++) {
-        if (interests[i].style.display == 'none') {
-            interests[i].style.display = 'block';
-        } else {
-            interests[i].style.display = 'none'
-        };
+        interests[i].style.display = 'block';
     }
     
 
@@ -68,11 +69,7 @@ function openInterests(e) {
 
 function openHot(e) {
     for(let i = 0; i< hot.length; i++) {
-        if (hot[i].style.display == 'none') {
-            hot[i].style.display = 'block';
-        } else {
-            hot[i].style.display = 'none'
-        };
+        hot[i].style.display = 'block';
     }
 
 

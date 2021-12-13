@@ -522,6 +522,8 @@ p {
     border-bottom: 3px red solid;
     padding-bottom: 5px;
 }
+/* One day maybe make this js so that on the mobile site when the red line goes when no longer on this tab */
+
 
 .destinations-dropdown-content,
 .interests-dropdown-content,
@@ -543,6 +545,11 @@ p {
 }
 
 .map img {
+    width: 100%;
+}
+
+.map .text p {
+    padding-right: 15px;
     width: 100%;
 }
 
