@@ -497,7 +497,6 @@ p {
     background: #fff;
     z-index: 10;
     opacity: 95%;
-    width: 50%;
 }
 
 .nav-right li {
@@ -520,6 +519,7 @@ p {
 .destinations-dropdown-content,
 .interests-dropdown-content,
 .hot-dropdown-content {
+  display: block;
   position: relative;   
 }
 
