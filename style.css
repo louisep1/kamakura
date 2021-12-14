@@ -485,7 +485,7 @@ p {
     }
     
     .no-scroll {
-        overflow: hidden;
+        overflow-x: hidden;
      }
 
     .mobile-nav {
